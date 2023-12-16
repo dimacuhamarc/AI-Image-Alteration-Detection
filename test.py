@@ -67,5 +67,6 @@ def DetectUsingPixelValue(image1, image2, threshold=30):
       print("Differing pixel coordinates:")
       for coord in coordinates:
           print(f"Pixel at ({coord[1]}, {coord[0]}) is different.")
+      print("The Image is altered")
 
 
