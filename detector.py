@@ -11,6 +11,7 @@ fontScale = 0.5
 color = (0, 255, 255)
 thickness = 1
 
+##  Functions
 # Image Display Function
 def DisplayImage(image, window_name):
   cv2.imshow(window_name, image)

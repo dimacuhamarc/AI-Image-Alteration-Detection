@@ -6,7 +6,7 @@ from detector import DetectUsingPixelValue
 ##  Change this to the name of the image you want to test
 IMAGE_NAME = 'image18'
 
-##  Function Definitions
+##  Functions
 # Get Image Function
 def GetImage(image_name, type, resize = True):
   image_path = os.path.join(os.getcwd(),type + '/' + image_name + '.jpg')
