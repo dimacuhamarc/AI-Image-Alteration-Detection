@@ -1,3 +1,7 @@
+## Detector Module
+# Image Detector Functions
+
+# Module Imports
 import cv2
 import numpy as np
 
