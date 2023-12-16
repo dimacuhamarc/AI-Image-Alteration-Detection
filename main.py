@@ -1,7 +1,9 @@
 import cv2
 import os
 
-IMAGE_NAME = 'image1'
+from test import DetectUsingSobel, DetectUsingPixelValue
+
+IMAGE_NAME = 'image4'
 
 def GetImage(image_name, type):
   image_path = os.path.join(os.getcwd(),type + '/' + image_name + '.jpg')
@@ -15,9 +17,10 @@ def __main__():
   DisplayImage(GetImage(IMAGE_NAME, 'altered'), 'Altered Image')
   DisplayImage(GetImage(IMAGE_NAME, 'raw'), 'Original Image')
   
-  DetectAlteredImage(GetImage(IMAGE_NAME, 'altered'), GetImage(IMAGE_NAME, 'raw'))
+  ##DetectUsingSobel(GetImage(IMAGE_NAME, 'raw'), GetImage(IMAGE_NAME, 'altered')) 
+  DetectUsingPixelValue(GetImage(IMAGE_NAME, 'raw'), GetImage(IMAGE_NAME, 'altered'))
 
-  
   cv2.waitKey(0)
   cv2.destroyAllWindows()
+  
 __main__()
